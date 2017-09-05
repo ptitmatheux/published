@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(leaflet)
 my_map <- leaflet() %>%
   addTiles() %>%
-  addMarkers(lng=6.139, lat=46.199, popup="<a href='http://lamusebouge.ch/'>La Muse Bouge</a>" )
+  addMarkers(lng=6.139094, lat=46.199793, popup="<a href='http://lamusebouge.ch/'>La Muse Bouge</a>" )
 my_map
 
 ```
