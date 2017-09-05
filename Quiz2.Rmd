@@ -1,0 +1,22 @@
+---
+title: "My first leaflet map"
+author: 
+date: "September 5, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## A nice coworking office !
+
+```{r, echo=FALSE, eval=TRUE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=6.139, lat=46.199, popup="<a href='http://lamusebouge.ch/'>La Muse Bouge</a>" )
+my_map
+
+```
+
